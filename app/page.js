@@ -92,7 +92,6 @@ const Page = () => {
 
       <section className="relative p-10">
   <div className="flex justify-center items-end relative z-0 bg-white font-extrabold">
-    {/* Fixed Background Issue */}
     <div className="absolute w-screen h-full bg-white/85 z-20">
       <h2 className="text-[#fa0d0d] text-[6vw] md:text-[10vw] leading-none font-bold -tracking-[1px] md:-tracking-[14px]">
         PORTFOLIO
