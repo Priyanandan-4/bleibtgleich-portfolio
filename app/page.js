@@ -44,6 +44,11 @@ const Page = () => {
         </div>
       </header>
 
+
+
+
+
+
       {/* Hero Section */}
       <section className="relative h-screen w-full flex flex-col justify-end">
         {/* Overlay Content */}
@@ -90,15 +95,47 @@ const Page = () => {
       </section>
 
 
+
+
+
       <section className="relative p-10">
   <div className="flex justify-center items-end relative z-0 bg-white font-extrabold">
-    <div className="absolute w-screen h-full bg-white/85 z-20">
-      <h2 className="text-[#fa0d0d] text-[6vw] md:text-[10vw] leading-none font-bold -tracking-[1px] md:-tracking-[14px]">
-        PORTFOLIO
-      </h2>
-    </div>
+  <div className="absolute w-screen h-[150vh] bg-white/85 z-20 text-[#fa0d0d] flex flex-col">
+  <div className="flex justify-between">
+<div className="pl-10">ig;</div>
+  <h2 className="text-[#fa0d0d] text-[7vw] md:text-[8vw] leading-none font-bold -tracking-[1px] md:-tracking-[14px] text-right pr-2 md:pr-11">
+    Design & dev<br/>
+    now with 50% <br/>
+    more debugging!
+  </h2>
 
-    <div className="relative z-10 flex flex-col justify-end text-[#561313]">
+  </div>
+  <h1 className="text-[3vw] md:text-[1.3vw] font-bold leading-none  pt-20 pl-10 md:pl-96 -tracking-[0.1px] md:-tracking-[1.5px]"><span className=" text-[14px] md:text-2xl">aBout;</span><br/>A detail-oriented Front-End Developer <br/>focused on creating intuitive, high-performance <br/> web applications with modern technologies</h1>
+  <div className="flex justify-between flex-col md:flex-row">
+  <h1 className="pt-16 pl-8 text-[10px] md:text-[24px] -tracking-[1px] md:-tracking-[1.5px] md:pt-48 md:pl-16">
+  "100% unique.99% 
+  <a 
+    href="https://www.bleibtgleich.com/"  
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="text-[20px]  md:text-4xl -tracking-[1px] md:-tracking-[3px] underline"
+  >
+    Bleibtgleich.
+  </a> 
+  Do the math."
+</h1>
+<h1 className="md:pt-80 md:pr-20 pr-1 pt-24 text-7xl md:text-9xl  -tracking-[1px] md:-tracking-[20px] flex items-center justify-center gap-4 md:gap-10">
+  <span>m'22</span> 
+  <span>-</span> 
+  <span className="-tracking-[1px] md:-tracking-[6px]">Ƥⓝ!</span>
+</h1>
+
+  </div>
+  <hr className="border-t-2 border-[#fa0d0d] my-9" />
+</div>
+
+    <div className="relative z-10 flex flex-col justify-end text-[#561313] h-[150vh]">
+      
       <h1 className="flex space-x-5 md:space-x-72 text-4xl sm:text-6xl md:text-9xl -tracking-[1px] md:-tracking-[10px]" style={{ filter: "blur(3px)" }}>
         <span>HTML</span>
         <span>CSS</span>
@@ -109,7 +146,7 @@ const Page = () => {
       </h1>
       <h1 className="flex space-x-5 md:space-x-72 text-4xl sm:text-6xl md:text-9xl -tracking-[1px] md:-tracking-[10px]" style={{ filter: "blur(3px)" }}>
         <span>TYPESCRIPT</span>
-        <span>SHADCN</span>
+        <span>MUI</span>
       </h1>
       <h1 className="flex space-x-5 md:space-x-72 text-4xl sm:text-6xl md:text-9xl -tracking-[1px] md:-tracking-[10px]" style={{ filter: "blur(3px)" }}>
         <span>GSAP</span>
@@ -119,13 +156,31 @@ const Page = () => {
         <span>TAILWIND</span>
         <span>DEVELOPER</span>
       </h1>
+      <h1 className="flex space-x-5 md:space-x-72 text-4xl sm:text-6xl md:text-9xl -tracking-[1px] md:-tracking-[10px]" style={{ filter: "blur(3px)" }}>
+      <span>REACTQUARY</span>
+      <span>FIGMA</span>
+      </h1>
+      <h1 className="flex space-x-5 md:space-x-72 text-4xl sm:text-6xl md:text-9xl -tracking-[1px] md:-tracking-[10px]" style={{ filter: "blur(3px)" }}>
+      <span>SHADCN</span>
+      <span>ZUSTAND</span>
+      </h1>
+      
+
     </div>
   </div>
 </section>
 
 
 
+     
 
+
+
+
+
+     <section>
+
+     </section>
     </main>
   )
 }
