@@ -5,6 +5,7 @@ import { useEffect } from "react"
 import Lenis from 'lenis'
 import THREE from "@/components/imagepage"
 import FOUR from "@/components/project"
+import FIVE from "@/components/contact"
 
 const Page = () => {
 
@@ -76,7 +77,7 @@ const Page = () => {
       </section>
 
       {/* Divider Section */}
-      <section className="bg-white h-16 md:h-56 flex flex-col justify-between relative">
+      <section className="bg-white h-16 md:h-36 flex flex-col justify-between relative">
         <hr className="border-t-2 border-[#fa0d0d] my-4" />
         <hr className="border-t-2 border-[#fa0d0d] my-4" />
       </section>
@@ -157,6 +158,7 @@ const Page = () => {
 
     <THREE/>
     <FOUR/>
+    <FIVE/>
     </main>
   )
 }
