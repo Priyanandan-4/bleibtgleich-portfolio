@@ -1,35 +1,50 @@
 import Image from "next/image";
 import React from "react";
-import BRAND from "../public/brand.svg"
+import BRAND from "../public/brand.svg";
 
 const FOUR = () => {
   return (
-    <section className="relative z-20">
-    <div className="relative bg-white/85 z-20 text-[#fa0d0d] py-10  flex justify-end  flex-col h-screen">
-    <div className="w-full flex flex-col md:flex-row justify-between h-auto  items-end p-4">
-    <h1 className="text-[#fa0d0d] text-[7vw] md:text-[8vw] leading-none font-bold -tracking-[1px] md:-tracking-[14px] md:self-end ">
-    Or at least,<br /> tried to.
-  </h1>
-  <Image src={BRAND} width={220} height={220} alt="icoooooo" className="self-start md:self-end pr-4" />
- 
-</div>
+    <section className="relative h-screen w-full overflow-hidden">
+      {/* Blurred background text */}
+      <div className="absolute inset-0 z-10 mt-6 text-[#561313] font-extrabold">
+        <h1
+          className="flex flex-wrap justify-between text-4xl sm:text-6xl md:text-9xl -tracking-[1px] md:-tracking-[10px]"
+          style={{ filter: "blur(3px)" }}
+        >
+          <span className="mb-2">A FEW</span>
+          <span className="mb-2 pr-4 md:pr-10">ᗡOMN</span>
+        </h1>
+        <h1
+          className="flex flex-wrap justify-between text-4xl sm:text-6xl md:text-9xl -tracking-[1px] md:-tracking-[10px]"
+          style={{ filter: "blur(3px)" }}
+        >
+          <span className="mb-2">THINGS</span>
+        </h1>
+        <h1
+          className="flex flex-wrap justify-between text-4xl sm:text-6xl md:text-9xl -tracking-[1px] md:-tracking-[10px]"
+          style={{ filter: "blur(3px)" }}
+        >
+          <span className="mb-2">I'VE CREATED.</span>
+        </h1>
       </div>
-      <div className="absolute top-0 -z-10 text-[#561313] font-extrabold overflow-hidden mt-6 h-auto w-screen">
-        <h1 className="flex flex-wrap justify-between md:space-x-72 text-4xl sm:text-6xl md:text-9xl -tracking-[1px] md:-tracking-[10px]" style={{ filter: "blur(3px)" }}>
-          <span>A FEW</span>
-          <span className="pr-10">ᗡOMN</span>
-        </h1>
-        <h1 className="flex flex-wrap justify-between md:space-x-40 lg:space-x-56 -tracking-[1px] md:-tracking-[10px] text-4xl sm:text-6xl md:text-9xl" style={{ filter: "blur(3px)" }}>
-          <span>THINGS</span>
-        </h1>
-        <h1 className="flex flex-wrap justify-between md:space-x-72 text-4xl sm:text-6xl md:text-9xl -tracking-[1px] md:-tracking-[10px]" style={{ filter: "blur(3px)" }}>
-          <span>I'VE CREATED.</span>
-        </h1>
+
+      {/* Foreground content */}
+      <div className="relative z-20 flex h-full w-full flex-col justify-end bg-white/85 py-10 px-6 md:px-12">
+        <div className="flex flex-col gap-6 items-start md:items-end w-full">
+          <h1 className="text-[#fa0d0d] text-[10vw] sm:text-[8vw] md:text-[6vw] leading-none font-bold -tracking-[1px] md:-tracking-[14px]">
+            Or at least,<br /> tried to.
+          </h1>
+          <Image
+            src={BRAND}
+            width={180}
+            height={180}
+            alt="brand logo"
+            className="mt-2 md:mt-0"
+          />
+        </div>
       </div>
-  </section>
-  )
+    </section>
+  );
 };
 
 export default FOUR;
-
-  
